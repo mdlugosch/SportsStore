@@ -77,7 +77,7 @@ namespace SportsStore
          */
         #endregion
         public void Configure(IApplicationBuilder app, IHostingEnvironment env)
-        {
+        { // Test
             if(env.IsDevelopment())
             {
                 app.UseDeveloperExceptionPage();

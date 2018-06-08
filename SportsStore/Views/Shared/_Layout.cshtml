@@ -1,0 +1,34 @@
+﻿<!-- Layout das von allen Views geteilt wird -->
+  <!DOCTYPE html>
+
+    <html>
+    <head>
+        <meta name="viewport" content="width=device-width" />
+        <link rel="stylesheet"
+              asp-href-include="/lib/bootstrap/dist/css/*.min.css"
+              asp-href-exclude="/lib/bootstrap/dist/css/bootstrap-grid.min.css" />
+        <link rel="stylesheet" asp-href-include="/lib/font-awesome/css/*.css" />
+        <title>SportsStore</title>
+    </head>
+    <body>
+        <!-- navbar navbar navbar-dark bg-dark -->
+        <div class="" role="navigation">
+            <div class="navbar navbar-dark bg-dark">
+                <div class="col-md-6 navbar-brand">
+                    <a style="color:white" href="#">Sports Store</a>
+                </div>
+                <div class="col-md-3 text-right">
+                    @await Component.InvokeAsync("CartSummary")
+                </div>
+            </div>
+        </div>
+        <div class="row m-1 p-1">
+            <div id="categories" class="col-3">
+                @await Component.InvokeAsync("NavigationMenu")
+            </div>
+            <div class="col-9">
+                @RenderBody()
+            </div>
+        </div>
+    </body>
+    </html>

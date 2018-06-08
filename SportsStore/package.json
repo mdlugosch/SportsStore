@@ -1,0 +1,20 @@
+{
+  "name": "sportsstore",
+  "version": "1.0.0",
+  "main": "index.js",
+  "dependencies": {
+    "bootstrap": "^4.1.1",
+    "font-awesome": "^4.7.0",
+    "jquery": "^3.3.1",
+    "jquery-validation": "^1.17.0",
+    "jquery-validation-unobtrusive": "^3.2.10",
+    "popper.js": "^1.14.3"
+  },
+  "devDependencies": {},
+  "scripts": {
+    "start": "node TestScript.js"
+  },
+  "author": "",
+  "license": "ISC",
+  "description": ""
+}
